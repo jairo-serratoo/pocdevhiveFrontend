@@ -1,4 +1,6 @@
-export class Carrier {
+import { ICarrier } from "../interfaces/icarrier"
+
+export class Carrier implements ICarrier {
     id!: string
     appointmentId!: string
     name!: string
