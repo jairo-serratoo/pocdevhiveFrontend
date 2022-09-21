@@ -3,9 +3,9 @@
     <div class="d-flex flex-column align-items-center w-100 ">
         <div class="w-75">
             <mat-form-field class="w-100 " appearance="outline">
-                <mat-label>Correo electrónico</mat-label>
-                <input matInput type="text" formControlName="userName" name="userName" id="userName"  required >
-                <div *ngIf="formlogin.get('email')?.invalid && formlogin.get('userName')?.errors && (formlogin.get('userName')?.dirty || formlogin.get('userName')?.touched)">
+                <mat-label>Usuario</mat-label>
+                <input matInput type="text" formControlName="userName" name="userName" id="userName"  required minlength="4" maxlength="20" >
+                <div *ngIf="formlogin.get('userName')?.invalid && formlogin.get('userName')?.errors && (formlogin.get('userName')?.dirty || formlogin.get('userName')?.touched)">
                     <!-- <small class="text-danger" *ngIf="formlogin.get('userName')?.hasError('email')">
                         Formato incorrecto.
                     </small> -->
@@ -13,10 +13,10 @@
                         El campo es requerido.
                     </small>
                     <small class="text-danger" *ngIf="formlogin.get('userName')?.hasError('minlength')">
-                        el tamaño minimo del campo es de 4 caracteres.
+                        El tamaño minimo del campo es de 4 caracteres.
                     </small>
                     <small class="text-danger" *ngIf="formlogin.get('userName')?.hasError('maxlength')">
-                        el tamaño maximo del campo es de 20 caracteres.
+                        El tamaño maximo del campo es de 20 caracteres.
                     </small>
                 </div>
             </mat-form-field>
