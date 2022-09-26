@@ -1,7 +1,7 @@
 export const userLogin = {
     id:1,
-    userName:'HulkDev',
-    password:'012345678',
-    email:'hulk@ago.mx',
+    userName:'Doci97',
+    password:'12345678',
+    email:'doci97@ago.mx',
     role:'admin'
 }
